@@ -26,21 +26,279 @@ public class doors extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        field_jpl = new javax.swing.JPanel();
+        doorholder_jpl = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        ajto_jbt1 = new javax.swing.JButton();
+        door1_jlb = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        door2_jlb = new javax.swing.JLabel();
+        ajto_jbt2 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        ajto_jbt3 = new javax.swing.JButton();
+        door3_jlb = new javax.swing.JLabel();
+        resault_jpl = new javax.swing.JPanel();
+        korszamlalo_jtf = new javax.swing.JTextField();
+        csere_nyert_jtf = new javax.swing.JTextField();
+        nemcsere_nyert_jtf = new javax.swing.JTextField();
+        exit_jbt = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        field_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder("Test your luck with our doors\n"));
+
+        doorholder_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, null, null));
+
+        ajto_jbt1.setBackground(new java.awt.Color(204, 102, 0));
+        ajto_jbt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ajto_jbt1ActionPerformed(evt);
+            }
+        });
+
+        door1_jlb.setText("1 Door");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(ajto_jbt1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(door1_jlb)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(7, Short.MAX_VALUE)
+                .addComponent(door1_jlb)
+                .addGap(18, 18, 18)
+                .addComponent(ajto_jbt1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        door2_jlb.setText("2 Door");
+
+        ajto_jbt2.setBackground(new java.awt.Color(204, 102, 0));
+        ajto_jbt2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        ajto_jbt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ajto_jbt2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(door2_jlb)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ajto_jbt2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(door2_jlb)
+                .addGap(18, 18, 18)
+                .addComponent(ajto_jbt2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        ajto_jbt3.setBackground(new java.awt.Color(204, 102, 0));
+        ajto_jbt3.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        ajto_jbt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ajto_jbt3ActionPerformed(evt);
+            }
+        });
+
+        door3_jlb.setText("3 Door");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(door3_jlb)
+                        .addGap(19, 19, 19))
+                    .addComponent(ajto_jbt3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(door3_jlb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addComponent(ajto_jbt3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout doorholder_jplLayout = new javax.swing.GroupLayout(doorholder_jpl);
+        doorholder_jpl.setLayout(doorholder_jplLayout);
+        doorholder_jplLayout.setHorizontalGroup(
+            doorholder_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(doorholder_jplLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        doorholder_jplLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jPanel1, jPanel2, jPanel3});
+
+        doorholder_jplLayout.setVerticalGroup(
+            doorholder_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(doorholder_jplLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(doorholder_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        doorholder_jplLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel1, jPanel2, jPanel3});
+
+        javax.swing.GroupLayout field_jplLayout = new javax.swing.GroupLayout(field_jpl);
+        field_jpl.setLayout(field_jplLayout);
+        field_jplLayout.setHorizontalGroup(
+            field_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(field_jplLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(doorholder_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        field_jplLayout.setVerticalGroup(
+            field_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(field_jplLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(doorholder_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        resault_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder("Resaults so far:"));
+
+        korszamlalo_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Rounds:\n"));
+        korszamlalo_jtf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                korszamlalo_jtfActionPerformed(evt);
+            }
+        });
+
+        csere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Cserevel nyert:"));
+        csere_nyert_jtf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                csere_nyert_jtfActionPerformed(evt);
+            }
+        });
+
+        nemcsere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Nem cserevel nyert:"));
+
+        javax.swing.GroupLayout resault_jplLayout = new javax.swing.GroupLayout(resault_jpl);
+        resault_jpl.setLayout(resault_jplLayout);
+        resault_jplLayout.setHorizontalGroup(
+            resault_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, resault_jplLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(resault_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(csere_nyert_jtf, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, resault_jplLayout.createSequentialGroup()
+                        .addComponent(korszamlalo_jtf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(nemcsere_nyert_jtf, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        resault_jplLayout.setVerticalGroup(
+            resault_jplLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(resault_jplLayout.createSequentialGroup()
+                .addComponent(korszamlalo_jtf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(csere_nyert_jtf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(nemcsere_nyert_jtf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        exit_jbt.setText("Exit");
+        exit_jbt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exit_jbtActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(field_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(resault_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(exit_jbt)
+                        .addGap(15, 15, 15))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(exit_jbt)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(resault_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(field_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ajto_jbt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajto_jbt1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ajto_jbt1ActionPerformed
+
+    private void korszamlalo_jtfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_korszamlalo_jtfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_korszamlalo_jtfActionPerformed
+
+    private void ajto_jbt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajto_jbt3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ajto_jbt3ActionPerformed
+
+    private void ajto_jbt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajto_jbt2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ajto_jbt2ActionPerformed
+
+    private void csere_nyert_jtfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_csere_nyert_jtfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_csere_nyert_jtfActionPerformed
+
+    private void exit_jbtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exit_jbtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_exit_jbtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +336,21 @@ public class doors extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ajto_jbt1;
+    private javax.swing.JButton ajto_jbt2;
+    private javax.swing.JButton ajto_jbt3;
+    private javax.swing.JTextField csere_nyert_jtf;
+    private javax.swing.JLabel door1_jlb;
+    private javax.swing.JLabel door2_jlb;
+    private javax.swing.JLabel door3_jlb;
+    private javax.swing.JPanel doorholder_jpl;
+    private javax.swing.JButton exit_jbt;
+    private javax.swing.JPanel field_jpl;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JTextField korszamlalo_jtf;
+    private javax.swing.JTextField nemcsere_nyert_jtf;
+    private javax.swing.JPanel resault_jpl;
     // End of variables declaration//GEN-END:variables
 }
