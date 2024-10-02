@@ -89,16 +89,6 @@
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="doorholder_jpl">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="">
-                  <Value PropertyName="innerBorder" id=""/>
-                  <Value PropertyName="color" id=""/>
-                </TitledBorder>
-              </Border>
-            </Property>
-          </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -166,6 +156,11 @@
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="66" red="cc" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
                     </Property>
                   </Properties>
                   <Events>
@@ -243,7 +238,7 @@
                                   <Component id="door3_jlb" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="ajto_jbt3" linkSize="3" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="ajto_jbt3" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -255,7 +250,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="door3_jlb" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="19" max="32767" attributes="0"/>
-                          <Component id="ajto_jbt3" linkSize="4" min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="ajto_jbt3" min="-2" pref="180" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>

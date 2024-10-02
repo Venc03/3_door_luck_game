@@ -45,11 +45,10 @@ public class doors extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        field_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder("Test your luck with our doors\n"));
-
-        doorholder_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, null, null));
+        //field_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
 
         ajto_jbt1.setBackground(new java.awt.Color(204, 102, 0));
+        ajto_jbt1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         ajto_jbt1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ajto_jbt1ActionPerformed(evt);
@@ -193,23 +192,23 @@ public class doors extends javax.swing.JFrame {
                 .addComponent(doorholder_jpl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        resault_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder("Resaults so far:"));
+        //resault_jpl.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
 
-        korszamlalo_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Rounds:\n"));
+        //korszamlalo_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
         korszamlalo_jtf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 korszamlalo_jtfActionPerformed(evt);
             }
         });
 
-        csere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Cserevel nyert:"));
+        //csere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
         csere_nyert_jtf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 csere_nyert_jtfActionPerformed(evt);
             }
         });
 
-        nemcsere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder("Nem cserevel nyert:"));
+        //nemcsere_nyert_jtf.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
 
         javax.swing.GroupLayout resault_jplLayout = new javax.swing.GroupLayout(resault_jpl);
         resault_jpl.setLayout(resault_jplLayout);
